@@ -92,7 +92,6 @@
     display: block;
     min-width: 150px;
     padding: 5px 10px;
-    line-height: auto;
     text-align: center;
     border: 2px solid #0c0900;
     border-radius: 5px;
@@ -100,5 +99,11 @@
     left: 0;
     top: 50%;
     margin-top: -15px;
+  }
+  .label.pass {
+    background-color: rgb(23, 192, 23);
+  }
+  .label.fail{
+    background-color: rgb(207, 67, 67);
   }
   

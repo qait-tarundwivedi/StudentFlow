@@ -39,7 +39,8 @@
     top: 0;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 50px;
+    width: auto;
     display: flex;
     align-items: center;
     background-color: #1976d2;
@@ -405,13 +406,13 @@
 <div clss="testing">
 
   <div id="wrapper">
-    <span class="label">Cengage.com</span>
+    <span [ngClass]="setClasses()" id="Cengage"  #Cengage >Cengage.com</span>
     <div class="branch lv">
       <div class="entry sole"><span class="label">Student</span>
         <div class="branch lv1">
           <div class="entry"> <span class="label">CU Purchased</span>
             <div class="branch lv1">
-              <div class="entry"> <span class="label">Dashboard</span>
+              <div class="entry"> <span [ngClass]="{'label ': true, 'pass': pass, 'fail': !pass}">Dashboard</span>
                 <div class="branch lv1">
                   <div class="entry"><span class="label">4 Months</span>
                     <div class="branch lv2">

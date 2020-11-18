@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "studentflow-f0834": {
+      "hosting": {
+        "my-app-angular": [
+          "studentflow-f0834"
+        ]
+      }
+    }
+  }
+}
