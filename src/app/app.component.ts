@@ -50,6 +50,7 @@ export class AppComponent implements AfterViewInit {
 
 
   async ngAfterViewInit() {
+    this.elementRef.nativeElement.ownerDocument.body.style.backgroundColor = '#fafafa'
     //  await this.renderer.addClass(this.RootCengage.nativeElement, 'pass');
     // await this.renderer.addClass(this.cengage_student.nativeElement, 'pass');
     await console.log('.--->' + this.DBData)
@@ -62,7 +63,7 @@ export class AppComponent implements AfterViewInit {
     const dom: HTMLElement = this.elementRef.nativeElement;
     const elements = dom.querySelectorAll('#wrapper span.label');
     console.log(elements);
-    elements.forEach(ele => console.log(ele.id));
+    elements.forEach(ele => console.log(ele.classList));
     if (this.DBData !== undefined) {
       elements.forEach(ele => {
         for (let key in this.DBData) {
@@ -86,7 +87,7 @@ export class AppComponent implements AfterViewInit {
   }
 
 
-  title = 'my-app-angular';
+  title = 'Student flow';
   public pass = true;
 
 
