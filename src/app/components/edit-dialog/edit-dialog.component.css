@@ -1,0 +1,9 @@
+.mat-icon-button {
+    background-color:transparent;
+}
+button{
+    margin-right: 1vw;
+    line-height: 18px;
+    height: auto;
+    width: auto;
+}
