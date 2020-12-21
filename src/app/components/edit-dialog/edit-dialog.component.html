@@ -4,3 +4,16 @@
 <mat-icon [inline]="true"
  [matTooltip]= getBug
   matTooltipPosition="after">bug_report</mat-icon>
+
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="menu">
+    <mat-icon>more_vert</mat-icon>
+  </button><mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>dialpad</mat-icon>
+      <span>Redial</span>
+    </button>
+    <button mat-menu-item>
+      <mat-icon>notifications_off</mat-icon>
+      <span>Disable alerts</span>
+    </button>
+  </mat-menu>
